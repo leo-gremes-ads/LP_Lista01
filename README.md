@@ -16,15 +16,16 @@
 <p>Os primeiros exercícios da lista são simples, sendo compostos apenas por programas de execução linear, e, aos poucos, vão sendo incorporados estruturas de decisão e de repetição. A lista aborda também modularização e, por fim, vetores e matrizes.
 
 <h4>Observações:</h4>
-1. A resolução dos exercícios estão divididos em projetos divididos por tema abordado.
+1. A resolução dos exercícios estão divididos em projetos divididos por tema abordado.<br>
 2. Em alguns exercícios da lista, principalmente nos que se tratam de Estrutras de Repetição, eu fui além do enunciado e fiz uma validação da entrada dos dados.<br>
 3. Não farei a modularização dos exercícios solicitados no lote 1.2, pois utilizei na validação de dados e irei utilizar nos exercícios de vetores.
+4. Está faltando o exercício 30
 
 <h4>Respostas<br><br>
 Lote 1.1<br>
 
 [1 ao 17 - Estruturas Sequenciais](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstSequencial_1502204/src)<br>
-[18 ao 29 - Estruturas de Decisão](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstDecisao_22022024/src)<br>
+[18 ao 30 - Estruturas de Decisão](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstDecisao_22022024/src)<br>
 [30 ao 45 - Estruturas de Repetição](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstRepeticao_29022024/src)</h4>
 
 <b>Lote 1.3<br>
