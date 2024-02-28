@@ -18,7 +18,7 @@
 <h4>Observações:</h4>
 1. A resolução dos exercícios estão divididos em projetos divididos por tema abordado.<br>
 2. Em alguns exercícios da lista, principalmente nos que se tratam de Estrutras de Repetição, eu fui além do enunciado e fiz uma validação da entrada dos dados.<br>
-3. Não farei a modularização dos exercícios solicitados no lote 1.2, pois utilizei na validação de dados e irei utilizar nos exercícios de vetores.
+3. Não farei a modularização dos exercícios solicitados no lote 1.2, pois utilizei na validação de dados e irei utilizar nos exercícios de vetores.<br>
 4. Está faltando o exercício 30
 
 <h4>Respostas<br><br>
