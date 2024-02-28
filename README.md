@@ -26,7 +26,7 @@ Lote 1.1<br>
 
 [1 ao 17 - Estruturas Sequenciais](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstSequencial_1502204/src)<br>
 [18 ao 30 - Estruturas de Decisão](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstDecisao_22022024/src)<br>
-[30 ao 45 - Estruturas de Repetição](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstRepeticao_29022024/src)</h4>
+[31 ao 45 - Estruturas de Repetição](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstRepeticao_29022024/src)</h4>
 
 <b>Lote 1.3<br>
 1 ao 12 -> Vetores e Matrizes</b> (Ainda não fiz)<b><br><br>
