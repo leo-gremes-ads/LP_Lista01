@@ -21,14 +21,14 @@
 3. Não farei a modularização dos exercícios solicitados no lote 1.2, pois utilizei na validação de dados e irei utilizar nos exercícios de vetores.<br>
 4. Está faltando o exercício 30
 
-<h4>Respostas<br><br>
-Lote 1.1<br>
-
+<h4>Respostas</h4>
+<b>Lote 1.1<br>
+  
 [1 ao 17 - Estruturas Sequenciais](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstSequencial_1502204/src)<br>
 [18 ao 30 - Estruturas de Decisão](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstDecisao_22022024/src)<br>
-[31 ao 45 - Estruturas de Repetição](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstRepeticao_29022024/src)</h4>
+[31 ao 45 - Estruturas de Repetição](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstRepeticao_29022024/src)<br><br></b>
 
 <b>Lote 1.3<br>
-1 ao 12 -> Vetores e Matrizes</b> (Ainda não fiz)<b><br><br>
+[1 ao 12 - Vetores e Matrizes](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Proj_Vetores07032024/src)</b> (do 1 ao 4 por enquanto)<b><br><br>
 
 Caixa Eletrônico</b> (Ainda não fiz)
