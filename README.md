@@ -29,6 +29,6 @@
 [31 ao 45 - Estruturas de Repetição](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Prj_EstRepeticao_29022024/src)<br><br></b>
 
 <b>Lote 1.3<br>
-[1 ao 12 - Vetores e Matrizes](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Proj_Vetores07032024/src)</b> (do 1 ao 4 por enquanto)<b><br><br>
+[1 ao 12 - Vetores e Matrizes](https://github.com/leo-gremes-ads/LP_Lista01/tree/main/Proj_Vetores07032024/src)</b>
 
 Caixa Eletrônico</b> (Ainda não fiz)
