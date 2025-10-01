@@ -5,14 +5,14 @@ import javax.swing.JOptionPane;
 
 public class NoiteCandidatos
 {
-    private static final int QTD_CANDIDATOS = 500;
-    private static final int[] LIMITES = {16, 20, 10, 15};
+    private static final int QTD_CANDIDATOS = 80000;
+    private static final int[] LIMITES = {16, 30, 24, 10};
     private static final int QTD_AREAS = LIMITES.length;
     
     // QUESTÃO 3
     public static void main(String[] args)
     {
-        int[][] notas = null;
+        int[][] notas = new int[QTD_CANDIDATOS][QTD_AREAS];
         int op = 0;
 
         while (op != 9) {
@@ -20,7 +20,7 @@ public class NoiteCandidatos
                 "Selecione a opção desejada:\n\n1 - Carregar matriz\n2 - Mostrar Estatisticas\n9 - Sair"
             ));
             if (op == 1) {
-                notas = carregarMatriz();
+                carregarMatriz(notas);
                 //mostrarMatriz(notas);
             }
             else if (op == 2)
@@ -32,9 +32,8 @@ public class NoiteCandidatos
     }
 
     // QUESTÃO 1
-    private static int[][] carregarMatriz()
+    private static void carregarMatriz(int[][] matriz)
     {
-        int[][] matriz = new int[QTD_CANDIDATOS][QTD_AREAS];
         int valor;
         
         for (int c = 0; c < QTD_CANDIDATOS; c++) {
@@ -46,7 +45,7 @@ public class NoiteCandidatos
 /* PREENCHER MATRIZ COM NÚMEROS ALEATÓRIOS PARA EVITAR TRABALHO REPETITIVO E FACILITAR OS TESTES */
                     if (valor == -10) {
                         preencherAleatorio(matriz);
-                        return matriz;
+                        return;
                     }
 /* LÓGICA DA PROVA CONTINUA ABAIXO */
                     if (valor >= 0 && valor <= LIMITES[a]) {
@@ -58,19 +57,37 @@ public class NoiteCandidatos
             }
         }
         JOptionPane.showMessageDialog(null, "Matriz carregada");
-        return matriz;
     }
 
     // QUESTÃO 2
     private static void mostrarEstatisticas(int[][] notas)
     {
         int[] notaFinal = new int[QTD_CANDIDATOS];
-        int aux, pos;
+        int[] notaAprovados = new int[QTD_CANDIDATOS];
+        float media;
+        int aux, pos, total, qtdAprovados;
         int notaMostrada = 1;
 
+        total = 0;
         for(int c = 0; c < QTD_CANDIDATOS; c++) {
-            for (int a = 0; a < QTD_AREAS; a++)
+            for (int a = 0; a < QTD_AREAS; a++) {
                 notaFinal[c] += notas[c][a];
+                if (a != 2 && notas[c][a] < (LIMITES[a] / 2)) {
+                    notaAprovados[c] = 0;
+                    break;
+                }
+                notaAprovados[c] += notas[c][a];
+            }
+        }
+
+        qtdAprovados = 0;
+        System.out.println("---------- Notas dos candidatos aprovados ----------");
+        for (int c = 0; c < QTD_CANDIDATOS; c++) {
+            if (notaAprovados[c] > 0) {
+                System.out.printf("Nota do candidatos %6d: %3d\n", c, notaAprovados[c]);
+                qtdAprovados += 1;
+                total += notaAprovados[c];
+            }
         }
 
         // BUBBLE SORT
@@ -84,16 +101,23 @@ public class NoiteCandidatos
             }
         }
 
-        // 100 maiores notas diferentes
+        // 50 maiores notas diferentes
         //System.out.println(Arrays.toString(notaFinal));
-        System.out.println("---------- 100 maiores notas diferntes ----------");
+        System.out.println("---------- 50 maiores notas diferntes ----------");
         pos = 0;
-        while (pos < QTD_CANDIDATOS && notaMostrada <= 100) {
+        while (pos < QTD_CANDIDATOS && notaMostrada <= 50) {
             aux = notaFinal[pos];
             System.out.println(notaMostrada + "a maior nota = " + aux);
             notaMostrada++;
             while (pos < QTD_CANDIDATOS && notaFinal[pos] == aux)
                 pos++;
+        }
+
+        media = total / (float)qtdAprovados;
+        System.out.println("Média: " + media);
+        for (int c = 0; c < QTD_CANDIDATOS; c++) {
+            if (notaAprovados[c] > media)
+                System.out.printf("O candidato %6d está acima da média com nota %3d\n", c, notaAprovados[c]);
         }
     }
 

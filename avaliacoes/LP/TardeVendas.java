@@ -4,33 +4,32 @@ import java.util.Random;
 public class TardeVendas
 {
     private static final int QTD_MESES = 36;
-    private static final int QTD_PRODUTOS = 5;
+    private static final int QTD_PRODUTOS = 300;
 
     // QUESTÃO 3
     public static void main(String[] args)
     {
-        int[][] notas = null;
+        int[][] vendas = new int[QTD_MESES][QTD_PRODUTOS];
         int opt = 0;
 
         while (opt != 9) {
             opt = Integer.parseInt(JOptionPane.showInputDialog(
                 "1 - Carregar Matriz\n2 - Mostrar Estatisticas\n9 - Sair"));
             if (opt == 1) {
-                notas = carregarMatriz();
+                carregarMatriz(vendas);
                 JOptionPane.showMessageDialog(null, "Matriz Carregada");
                 //mostrarMatriz(notas);
             }
             else if (opt == 2)
-                mostrarEstatisticas(notas);
+                mostrarEstatisticas(vendas);
             else if (opt != 9)
                 System.out.println("Opção Inválida!");
         }
     }
 
     //  QUESTÃO 1
-    private static int[][] carregarMatriz()
+    private static void carregarMatriz(int[][] matriz)
     {
-        int[][] matriz = new int[QTD_MESES][QTD_PRODUTOS];
         int minimo = 20;
         int maximo = 5000;
         int valor;
@@ -43,7 +42,7 @@ public class TardeVendas
 /* PREENCHER MATRIZ COM VALORES ALEATÓRIOS PARA EVITAR TRABALHO REPETITIVO E FACILITAR TESTES */
                         if (valor == 0) {
                         preencherAleatorio(matriz, prod, mes, minimo, maximo);
-                        return matriz;
+                        return;
                     }
 /* LÓGICA DA PROVA CONTINUA ABAIXO */
                     if (valor >= minimo && valor <= maximo)
@@ -54,7 +53,6 @@ public class TardeVendas
                 matriz[mes][prod] = valor;
             }
         }
-        return matriz;
     }
 
     // QUESTÃO 2
